@@ -1,5 +1,0 @@
-codecov
-pytest
-pytest-cov < 2.6
-opencv-python==4.9.0.80
-numpy

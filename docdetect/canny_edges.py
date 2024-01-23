@@ -2,7 +2,7 @@
 import cv2
 
 
-def detect_edges(im, blur_radius=0, thr1=100, thr2=200, remove_text=True):
+def detect_edges(im, blur_radius=0, thr1=25, thr2=200, remove_text=True):
     enhanced_im = _preprocess(im, blur_radius)
     edges = cv2.Canny(enhanced_im, thr1, thr2)
     if remove_text:
